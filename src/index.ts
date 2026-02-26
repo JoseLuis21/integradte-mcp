@@ -5,8 +5,13 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { ApiClient } from "./api-client.js";
 import { allTools, toolMap } from "./tools/index.js";
 
-const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:5058";
-const API_KEY = process.env.API_KEY || "";
+const API_BASE_URL = process.env.API_BASE_URL;
+const API_KEY = process.env.API_KEY;
+
+if (!API_BASE_URL) {
+  console.error("ERROR: API_BASE_URL environment variable is required");
+  process.exit(1);
+}
 
 if (!API_KEY) {
   console.error("ERROR: API_KEY environment variable is required");
