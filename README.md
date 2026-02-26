@@ -38,8 +38,8 @@ Agregar a `claude_desktop_config.json`:
 {
   "mcpServers": {
     "integrafacturacion": {
-      "command": "node",
-      "args": ["/ruta/a/integrafacturacion-mcp/dist/index.js"],
+      "command": "npx",
+      "args": ["-y", "@integrafacturacion/mcp"],
       "env": {
         "API_BASE_URL": "https://api.integrafacturacion.cl",
         "API_KEY": "tu_api_key"
