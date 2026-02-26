@@ -1,6 +1,6 @@
 {
   "name": "@integrafacturacion/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP Server para consultar datos de facturación electrónica desde la API Integrafacturacion",
   "main": "dist/index.js",
   "bin": {
