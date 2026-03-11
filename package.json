@@ -1,6 +1,6 @@
 {
   "name": "@integradte/mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP Server para consultar datos de facturación electrónica desde la API IntegraDTE",
   "main": "dist/index.js",
   "bin": {
