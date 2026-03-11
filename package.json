@@ -1,7 +1,7 @@
 {
-  "name": "@integrafacturacion/mcp",
+  "name": "@integradte/mcp",
   "version": "1.0.1",
-  "description": "MCP Server para consultar datos de facturación electrónica desde la API Integrafacturacion",
+  "description": "MCP Server para consultar datos de facturación electrónica desde la API IntegraDTE",
   "main": "dist/index.js",
   "bin": {
     "mcp": "dist/index.js"
@@ -23,7 +23,7 @@
     "sii",
     "chile"
   ],
-  "author": "IntegraFacturación",
+  "author": "IntegraDTE",
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"

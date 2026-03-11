@@ -21,7 +21,7 @@ if (!API_KEY) {
 const api = new ApiClient(API_BASE_URL, API_KEY);
 
 const server = new McpServer({
-  name: "@integrafacturacion/mcp",
+  name: "@integradte/mcp",
   version: "1.0.0",
 });
 

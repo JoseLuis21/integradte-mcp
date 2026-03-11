@@ -1,6 +1,6 @@
-# @integrafacturacion/mcp
+# @integradte/mcp
 
-MCP Server para consultar datos de facturación electrónica chilena desde la API IntegraFacturación.
+MCP Server para consultar datos de facturación electrónica chilena desde la API IntegraDTE.
 
 Permite a modelos de lenguaje (Claude, etc.) consultar documentos tributarios, folios, estadísticas y más mediante el protocolo MCP (Model Context Protocol).
 
@@ -27,7 +27,7 @@ npm run build
 
 | Variable | Descripción | Default |
 |----------|-------------|---------|
-| `API_BASE_URL` | URL de la API IntegraFacturación | `http://localhost:5058` |
+| `API_BASE_URL` | URL de la API IntegraDTE | `http://localhost:5058` |
 | `API_KEY` | API Key de autenticación (requerida) | — |
 
 ## Uso con Claude Desktop
@@ -37,11 +37,11 @@ Agregar a `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "integrafacturacion": {
+    "integradte": {
       "command": "npx",
-      "args": ["-y", "@integrafacturacion/mcp"],
+      "args": ["-y", "@integradte/mcp"],
       "env": {
-        "API_BASE_URL": "https://api.integrafacturacion.cl",
+        "API_BASE_URL": "https://api.integradte.cl",
         "API_KEY": "tu_api_key"
       }
     }
@@ -54,11 +54,11 @@ Agregar a `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "integrafacturacion": {
+    "integradte": {
       "command": "npx",
-      "args": ["-y", "@integrafacturacion/mcp"],
+      "args": ["-y", "@integradte/mcp"],
       "env": {
-        "API_BASE_URL": "https://api.integrafacturacion.cl",
+        "API_BASE_URL": "https://api.integradte.cl",
         "API_KEY": "tu_api_key"
       }
     }
@@ -95,7 +95,7 @@ Este repo usa [Changesets](https://github.com/changesets/changesets) + GitHub Ac
 ### Configuración inicial
 
 1. Crear el secret `NPM_TOKEN` en GitHub (`Settings > Secrets and variables > Actions`).
-2. El token debe tener permisos para publicar en el scope `@integrafacturacion`.
+2. El token debe tener permisos para publicar en el scope `@integradte`.
 3. Si la organización exige 2FA para publish, usa un token con `bypass 2fa`.
 
 ### Flujo de versiones
